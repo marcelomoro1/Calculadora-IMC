@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+:root{
+    --primary-color: rgb(105, 170, 226);
+}
+
+*{
+    box-sizing: border-box;
+    outline: none;
+
+}
+body{
+    background-color: var(--primary-color);
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+.container{
+    max-width: 640px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: wheat;
+    border-radius: 10px;
+}
+form input, form label, form button{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+form input{
+    font-size: 24px;
+    height: 30px;
+    padding: 0 20px;
+}
+form input:focus{
+    outline: 1px solid var(--primary-color);
+}
+form button{
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 19px;
+    font-weight: 700;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+form button:hover{
+    background-color: rgb(79, 126, 167);
+    outline: 0.5px solid black;
+}
+.container div{
+    display: flex;
+    flex-flow: nowrap;
+    gap: 180px;
+    padding: 5px;
+}
+
+/*DIV RESULTADO*/
+.paragrafo-resultado{
+    background-color: greenyellow;
+    padding: 5px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+.paragrafo-resultado-invalido{
+    background-color: rgb(255, 47, 47);
+    padding: 5px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
